@@ -172,5 +172,58 @@ public class DayOfWeekSwitch {
                 System.out.println(+ sum);
             }
         }
+#largest number
+public class FindLargest {
+    public static void main(String[] args) {
+        int[] arr = {10, 70, 50, 40};
+        int max = arr[0]; 
+
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i]; 
+            }
+        }
+
+        System.out.println("The largest element is: " + max);
+    }
+}
+#sum of the elements
+public class Sum {
+    public static void main(String[] args) {
+      
+        int[] numbers = {10, 70, 50, 40, 70};
+
+        int sum = 0;
+        for (int i = 0; i < numbers.length; i++) {
+            sum += numbers[i];
+        }
+        System.out.println("Sum : " + sum);
+    }
+}
+#element in the array is found or not
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        int[] arr = {10, 20, 30, 40};
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the number: ");
+    
+        int num = sc.nextInt();
+        boolean found = false;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == num) {
+                System.out.println(i + " " + arr[i]);
+                found = true;
+            
+                break;
+        }
+        }
+        if(!found){
+         System.out.println("Not found");
+        }
+        sc.close();
+    }
+}
+
 
 
