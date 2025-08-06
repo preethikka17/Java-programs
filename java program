@@ -244,6 +244,18 @@ public class Sum {
         System.out.println("sum: " + sum);
     }
 }
-
-
+#5 table
+public class Table {
+    public static void main(String[] args) {
+        int[] table = new int[10];
+        int num = 5;
+        for (int i = 0; i < table.length; i++) {
+            table[i] = num * (i + 1);
+        }
+        System.out.println("Table:");
+        for (int i = 0; i < table.length; i++) {
+            System.out.println(num + " x " + (i + 1) + " = " + table[i]);
+        }
+    }
+}
 
